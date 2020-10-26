@@ -1,0 +1,60 @@
+#instagramImages {
+	min-width: 100px;
+}
+
+.instaImgBgr {
+	background-repeat: no-repeat;
+    background-size: cover;
+	background-position: center;
+	height: 100%;
+	width: 100%;
+}
+
+.instaWrap {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	vertical-align: bottom;
+}
+
+.instaOverlay { 
+	opacity: 0;
+	position: absolute; 
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+}
+
+.instaLikes {font-size: calc(1vw + 1vh + 1vmin);}
+.instaComment {font-size: calc(1vw + 1vh + 1vmin);}
+.instaDi {display: inline-block; }
+instagramImages .fa {color: #fff; }
+
+.instaInfo {
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.instaNumL { float: right; padding-top: 1px;}
+.instaNumR { float: right; padding-top: 1px;}
+
+.insta_load_more {
+	margin: 20px auto 5px auto; 
+	cursor: pointer;
+	text-align: center;
+	clear: both;
+}
+
+.instaGapI {
+	height: 5px;
+	width: 7%;
+	display: inline-block;
+}

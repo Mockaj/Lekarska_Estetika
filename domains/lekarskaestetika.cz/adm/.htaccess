@@ -1,0 +1,11 @@
+RewriteEngine On
+
+
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^([^.]+)$    $1.php [L,QSA]
+
+RewriteRule ^test-post/([a-zA-Z0-9-/]+)$ test-post.php?url=$1
+RewriteRule ^test-post/([a-zA-Z-0-9-]+)/ test-post.php?url=$1
+
+
+

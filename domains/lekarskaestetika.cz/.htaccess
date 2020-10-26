@@ -1,0 +1,11 @@
+RewriteEngine On
+
+
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^([^.]+)$    $1.php [L,QSA]
+
+RewriteRule ^sluzby/([a-zA-Z0-9-/]+)$ sluzba.php?url=$1
+RewriteRule ^sluzby/([a-zA-Z-0-9-]+)/ sluzba.php?url=$1
+
+RewriteRule ^aktuality/([a-zA-Z0-9-/]+)$ clanek.php?url=$1
+RewriteRule ^aktuality/([a-zA-Z-0-9-]+)/ clanek.php?url=$1
